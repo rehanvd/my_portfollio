@@ -1,17 +1,20 @@
 import {
-    HtmlIcon, CssIcon, JsIcon, ReactIcon, NodeIcon, TsIcon, NextIcon, MysqlIcon, MongoIcon, GdriveIcon, SocketIoIcon, RestApiIcon, PhpIcon, ViteIcon, NextAuthIcon, ReduxIcon, TailwindIcon, ZustandIcon, AstroIcon, NanostoresIcon, D3JsIcon, ReactQueryIcon, EdgeStoreIcon
+    HtmlIcon, CssIcon, JsIcon, ReactIcon, NodeIcon, TsIcon, NextIcon, MysqlIcon, MongoIcon, GdriveIcon, SocketIoIcon, RestApiIcon, PhpIcon, ViteIcon, NextAuthIcon, ReduxIcon, TailwindIcon, ZustandIcon, AstroIcon, NanostoresIcon, D3JsIcon, ReactQueryIcon, EdgeStoreIcon, PythonIcon
 } from "../assets/Icons"
 
 import {
-    NextmartLogo, ArmsLogo, ArmsPhpLogo, ClimateLogo, CovidtraxLogo, DaysbeyondLogo, FilmstackLogo, PikturesLogo, SrinivasLogo, XReconLogo, YoatubeLogo, VortexaLogo
+    NextmartLogo, ArmsLogo, ArmsPhpLogo, ClimateLogo, CovidtraxLogo, DaysbeyondLogo, FilmstackLogo, PikturesLogo, SrinivasLogo, XReconLogo, YoatubeLogo, VortexaLogo,
+    PlantDiseaseLogo, GestureTextLogo, BmiAnalyzerLogo, CivicCircleLogo, ExamSeatingLogo
 } from "../assets/Logos"
 
 import {
-    NextmartShots, Armsv1Shots, Armsv2Shots, ClimateShots, CovidTraxShots, DaysbeyondShots, FilmstackShots, PikturesShots, SrinivasShots, XreconShots, YoatubeShots, VortexaShots, Armsv3Shots
+    NextmartShots, Armsv1Shots, Armsv2Shots, ClimateShots, CovidTraxShots, DaysbeyondShots, FilmstackShots, PikturesShots, SrinivasShots, XreconShots, YoatubeShots, VortexaShots, Armsv3Shots,
+    PlantDiseaseShots, GestureTextShots, BmiAnalyzerShots, CivicCircleShots, ExamSeatingShots
 } from "../assets/Shots"
 
 import {
-    ARMSv1Mockup, ARMSv2Mockup, ARMSv3Mockup, ClimateMockup, DaysbeyondMockup, SrinivasMockup, VortexaMockup, XreconMockup, YoatubeMockup
+    ARMSv1Mockup, ARMSv2Mockup, ARMSv3Mockup, ClimateMockup, DaysbeyondMockup, SrinivasMockup, VortexaMockup, XreconMockup, YoatubeMockup,
+    PlantDiseaseMockup, GestureTextMockup, BmiAnalyzerMockup, CivicCircleMockup, ExamSeatingMockup
 } from "../assets/Mockup"
 
 
@@ -191,6 +194,16 @@ const TechInfo = {
         title: "EdgeStore",
         description: "EdgeStore is an open-source file storage service, designed for scalability and performance, with efficient updates and minimal API.",
         icon: EdgeStoreIcon
+    },
+    Python: {
+        title: "Python",
+        description: "A versatile programming language widely used for AI, machine learning, and data analysis.",
+        icon: PythonIcon
+    },
+    TensorFlow: {
+        title: "TensorFlow",
+        description: "An open-source library for machine learning and deep learning applications.",
+        icon: PythonIcon // Using Python icon as placeholder
     }
 };
 
@@ -198,7 +211,7 @@ const TechInfo = {
 const FeatureList = {
     Responsive: {
         title: "Responsive Design",
-        description: "Enjoy a seamless experience across devices with a responsive design that adapts to various screen sizes and orientations."
+        description: "Enjoy a seamless experience across devices with a responsive design that adapts to various screen sizes."
     },
     SEO: {
         title: "SEO Optimization",
@@ -208,407 +221,162 @@ const FeatureList = {
 
 export const ProjectsList: ProjectsListType = [
     {
-        Name: "ARMS v3",
-        ShortDesc: "An educational platform designed to empower students with easy access to study materials. Students can browse & download PDFs files.",
-        Desc: "ARMS (Academic Resource Management System) is an all-inclusive educational platform designed to empower students with easy access to study materials for their respective subjects. By logging in anonymously, students can conveniently browse and download PDF documents uploaded by authorized faculties. With a centralized approach, ARMS ensures that students can effortlessly find and obtain the necessary resources they need for their academic pursuits. It's a user-friendly solution that streamlines the process of resource management, providing a seamless experience for both students and faculties alike.",
-        Logo: ArmsLogo,
-        Shot: Armsv3Shots,
-        Mockup: ARMSv3Mockup,
-        Theme: "#FFF",
+        Name: "Plant Disease Identifier",
+        ShortDesc: "Empowering agriculture with AI. Identify crop diseases instantly through advanced leaf analysis patterns.",
+        Desc: "The Plant Disease Identifier is a cutting-edge AI-powered application designed to support farmers, agronomists, and botanists in early disease detection. By leveraging deep learning models, the app analyzes leaf morphology and discoloration patterns to identify over 30+ common plant diseases. It provides instant diagnostic reports and sustainable treatment recommendations, helping to prevent crop loss and ensure food security in the digital age.",
+        Logo: PlantDiseaseLogo,
+        Shot: PlantDiseaseShots,
+        Mockup: PlantDiseaseMockup,
+        Theme: "#22c55e",
         Status: "completed",
-        Link: "https://arms-v3.vercel.app/",
-        Source: "https://github.com/rehanvd/arms-v3",
-        Tech: [TechInfo.Next, TechInfo.TypeScript, TechInfo.TailwindCSS, TechInfo.ReactQuery, TechInfo.Zustand, TechInfo.MongoDB, TechInfo.NextAuth, TechInfo.EdgeStore],
+        Link: "#",
+        Source: "#",
+        Tech: [TechInfo.Next, TechInfo.TypeScript, TechInfo.Python, TechInfo.TensorFlow, TechInfo.TailwindCSS],
         features: [
             {
-                title: "Anonymous Login",
-                description: "Students can conveniently  log in anonymously to browse and access study materials."
+                title: "AI Image Diagnostics",
+                description: "Instantly detect diseases from leaf photos with over 95% accuracy using Convolutional Neural Networks."
             },
             {
-                title: "Secure Access",
-                description: "Utilizes NextAuth for secure authentication of authorized users using Google and Github Auth providers."
+                title: "Treatment Database",
+                description: "Access a curated database of organic and chemical treatments specifically tailored to identified diseases."
             },
             {
-                title: "Streamlined Resource Management",
-                description: "Efficient upload, update, and management of study materials using EdgeStore cloud storage."
-            },
-            {
-                title: "Document Download",
-                description: "Easily download PDF documents for offline access."
-            },
-            {
-                title: "Efficient Data Management",
-                description: "Automatically caches query results, reduces redundant network requests, and improves overall application performance using Tanstack Query."
+                title: "Offline Support",
+                description: "Download disease patterns for offline identification in remote farm locations without internet."
             },
             FeatureList.Responsive,
             FeatureList.SEO
         ],
         hideProject: false,
         LogoSize: 50,
-        versions: [
-            { title: "ARMS v3", version: "3" },
-            { title: "ARMS v2", version: "2" },
-            { title: "ARMS v1", version: "1" },
-        ]
+        versions: []
     },
     {
-        Name: "Vortexa",
-        ShortDesc: "Stay informed about current conditions, forecasts, and astronomical data, and gain valuable insights into current weather patterns and trends.",
-        Desc: "Explore comprehensive weather insights and forecasts with Vortexa. Stay informed about current conditions, forecasts, and astronomical data, and gain valuable insights into weather patterns and trends.",
-        Logo: VortexaLogo,
-        Shot: VortexaShots,
-        Mockup: VortexaMockup,
-        Theme: "#fff",
+        Name: "Gesture-to-Text AI",
+        ShortDesc: "Breaking communication barriers. A real-time sign language translation engine powered by computer vision.",
+        Desc: "The Gesture-to-Text AI is a revolutionary communication bridge that translates sign language into spoken and written language in real-time. Built using MediaPipe and custom-trained LSTM models, it recognizes complex hand gestures and finger-spelling with extreme precision. This project aims to empower the deaf and hard-of-hearing community by providing a seamless tool for interaction in educational and professional environments.",
+        Logo: GestureTextLogo,
+        Shot: GestureTextShots,
+        Mockup: GestureTextMockup,
+        Theme: "#8b5cf6",
         Status: "completed",
-        Link: "https://vortexa.netlify.app/",
-        Source: "https://github.com/rehanvd/vortexa",
-        Tech: [TechInfo.Astro, TechInfo.React, TechInfo.TypeScript, TechInfo.TailwindCSS, TechInfo.D3, TechInfo.NanoStores, TechInfo.RESTAPI],
+        Link: "#",
+        Source: "#",
+        Tech: [TechInfo.React, TechInfo.TypeScript, TechInfo.Node, TechInfo.Python, TechInfo.SocketIO],
         features: [
-            FeatureList.Responsive,
-            FeatureList.SEO,
             {
-                title: "Dynamic Background Images",
-                description: "Experience the weather firsthand with dynamic background images that change based on the current weather conditions, creating an immersive atmosphere."
+                title: "Real-Time Translation",
+                description: "Low-latency gesture tracking and translation using ultra-fast computer vision models."
             },
             {
-                title: "City Search",
-                description: "Easily search for weather information in any city around the world. Get accurate forecasts and conditions for your desired location."
+                title: "Multi-Dialect Support",
+                description: "Optimized for various international sign language standards through adaptive learning."
             },
             {
-                title: "Wind Direction Compass",
-                description: "Visualize wind direction with an interactive compass display. Easily identify the direction from which the wind is blowing for better understanding of weather patterns."
+                title: "Voice Synthesis",
+                description: "Integrated Text-to-Speech (TTS) engine to vocalize translated gestures instantly."
             },
-            {
-                title: "Sunrise-Sunset Graph",
-                description: "Track the daily progression of sunrise and sunset times with an intuitive graph. Plan your activities accordingly based on daylight hours."
-            },
-            {
-                title: "Air Quality Index (AQI)",
-                description: "Stay informed about air quality levels with real-time Air Quality Index (AQI) data. Monitor pollution levels and take necessary precautions for your health."
-            },
-            {
-                title: "24-Hour Weather Forecast",
-                description: "Plan your day with a detailed 24-hour weather forecast displayed graphically. Visualize temperature changes, precipitation, and other weather parameters."
-            },
-            {
-                title: "2-Day Forecast",
-                description: "Get a glimpse of the weather ahead with a concise 2-day forecast. Stay prepared for upcoming changes in weather conditions."
-            }
+            FeatureList.Responsive
         ],
         hideProject: false,
         LogoSize: 50,
-        versions: [
-            { title: "Vortexa", version: "2" },
-            { title: "CliMate", version: "1" },
-        ]
+        versions: []
     },
     {
-        Name: "Next Mart",
-        ShortDesc: "Discover an unparalleled shopping experience with Next Mart website. Unleash the power of online shopping with a diverse range of products.",
-        Desc: "Discover an unparalleled shopping experience with Next Mart, an exceptional web app developed by Rehan. Unleash the power of online shopping with a vast array of products at your fingertips",
-        Logo: NextmartLogo,
-        Shot: NextmartShots,
-        Mockup: ARMSv3Mockup,
-        Theme: "#090b0b",
+        Name: "BMI Report Analyzer",
+        ShortDesc: "Go beyond simple calculations. A comprehensive health intelligence platform for personalized wellness.",
+        Desc: "BMI Report Analyzer is more than just a calculator; it's a personal health diagnostic tool. It analyzes body metrics alongside lifestyle data to provide a holistic view of user health. The platform generates high-fidelity PDF health reports, tracks long-term biometric trends, and uses AI to suggest personalized nutritional pathways based on specific body composition goals.",
+        Logo: BmiAnalyzerLogo,
+        Shot: BmiAnalyzerShots,
+        Mockup: BmiAnalyzerMockup,
+        Theme: "#f43f5e",
+        Status: "completed",
+        Link: "#",
+        Source: "#",
+        Tech: [TechInfo.Astro, TechInfo.TypeScript, TechInfo.D3, TechInfo.TailwindCSS, TechInfo.Zustand],
+        features: [
+            {
+                title: "Dynamic Data Visuals",
+                description: "Interactive health charts and progress rings powered by D3.js for deep biometric insights."
+            },
+            {
+                title: "PDF Report Engine",
+                description: "Generate and export professional-grade clinical health reports in one click."
+            },
+            {
+                title: "Nutritional AI",
+                description: "Smart diet recommendations based on your metabolic rate and fitness objectives."
+            },
+            FeatureList.Responsive,
+            FeatureList.SEO
+        ],
+        hideProject: false,
+        LogoSize: 50,
+        versions: []
+    },
+    {
+        Name: "Civic Circle",
+        ShortDesc: "Modernizing democracy. A transparent platform for citizen engagement and local governance resolution.",
+        Desc: "Civic Circle is a community-driven ecosystem designed to bridge the gap between citizens and their local administration. Users can report infrastructure issues, track resolution statuses in real-time, and participate in community voting for local projects. Built on a foundation of transparency, it empowers residents to take an active role in shaping their neighborhoods through a sleek, map-centric interface.",
+        Logo: CivicCircleLogo,
+        Shot: CivicCircleShots,
+        Mockup: CivicCircleMockup,
+        Theme: "#3b82f6",
         Status: "development",
-        Link: "https://nextmart.vercel.app/",
-        Source: "https://github.com/rehanvd/nextmart",
-        Tech: [TechInfo.Next, TechInfo.TypeScript, TechInfo.MongoDB, TechInfo.NextAuth, TechInfo.Redux, TechInfo.TailwindCSS],
-        features: [
-            FeatureList.Responsive,
-            FeatureList.SEO,
-        ],
-        hideProject: true,
-        LogoSize: 40,
-        versions: []
-    },
-    {
-        Name: "ARMS v2",
-        ShortDesc: "A platform which simplifies resource management for students. Faculties can upload PDF files. Students download study materials anonymously.",
-        Desc: "ARMS (Academic Resource Management System) is an all-inclusive educational platform designed to empower students with easy access to study materials for their respective subjects. By logging in anonymously, students can conveniently browse and download PDF documents uploaded by authorized faculties. With a centralized approach, ARMS ensures that students can effortlessly find and obtain the necessary resources they need for their academic pursuits. It's a user-friendly solution that streamlines the process of resource management, providing a seamless experience for both students and faculties alike.",
-        Logo: ArmsLogo,
-        Shot: Armsv2Shots,
-        Mockup: ARMSv2Mockup,
-        Theme: "#fff",
-        Status: "completed",
-        Link: "https://armss.netlify.app/",
-        Source: "https://github.com/rehanvd/ARMS",
-        Tech: [TechInfo.Vite, TechInfo.React, TechInfo.Node, TechInfo.MongoDB, TechInfo.GDrive],
+        Link: "#",
+        Source: "#",
+        Tech: [TechInfo.Next, TechInfo.TypeScript, TechInfo.MongoDB, TechInfo.NextAuth, TechInfo.EdgeStore],
         features: [
             {
-                title: "Anonymous Login",
-                description: "Students can conveniently  log in anonymously to browse and access study materials."
+                title: "Geo-Spatial Reporting",
+                description: "Location-aware issue reporting with interactive maps for precise problem identification."
             },
             {
-                title: "Streamlined Resource Management",
-                description: "Upload, update, and management of study materials using Google Drive cloud storage."
+                title: "Resolution Pipeline",
+                description: "Transparent ticketing system where users can see the exact stage of their reported task."
             },
             {
-                title: "Document Download",
-                description: "Easily download PDF documents for offline access."
+                title: "Community Consensus",
+                description: "A secure voting system for citizens to prioritize local government budget allocation."
             },
             FeatureList.Responsive,
-            FeatureList.SEO,
-        ],
-        hideProject: true,
-        LogoSize: 55,
-        versions: [
-            { title: "ARMS v3", version: "3" },
-            { title: "ARMS v2", version: "2" },
-            { title: "ARMS v1", version: "1" },
-        ]
-    },
-    {
-        Name: "XRecon",
-        ShortDesc: "A real-time chat app, reminiscent of WhatsApp, allowing users to register, login, and connect with friends and family through instant messaging.",
-        Desc: "XRecon is a dynamic real-time chat app that offers a seamless communication experience, akin to popular platforms like WhatsApp. With XRecon, users can effortlessly register and log in to their accounts, enabling them to connect with friends and family through instant messaging. Whether it's sharing updates, engaging in conversations, or simply staying connected, XRecon provides a user-friendly interface for convenient and reliable communication.",
-        Logo: XReconLogo,
-        Shot: XreconShots,
-        Mockup: XreconMockup,
-        Theme: "#001220",
-        Status: "development",
-        Link: "https://xrecon.netlify.app/",
-        Source: "https://github.com/rehanvd/xrecon",
-        Demo: { email: "demouser123@gmail.com", password: "DemoUser123" },
-        Tech: [TechInfo.Vite, TechInfo.React, TechInfo.Node, TechInfo.MongoDB, TechInfo.SocketIO],
-        features: [
-            {
-                title: "Real-Time Chat",
-                description: "Engage in real-time conversations with other users using Socket.io technology providing seamless communication."
-            },
-            {
-                title: "Dynamic User Avatars",
-                description: "Personalize your profile with dynamic user avatars generated using the Multiavatar API. Each user gets a unique and colorful avatar based on their username."
-            },
-            {
-                title: "Private Messaging",
-                description: "Communicate privately with other users through secure and encrypted messaging. Exchange messages without the worry of unauthorized access."
-            },
-            {
-                title: "Emojis and Reactions",
-                description: "Express yourself with a wide range of emojis and reactions. Add fun and personality to your messages with animated emojis and customizable reactions."
-            },
-            FeatureList.Responsive,
-            FeatureList.SEO,
+            FeatureList.SEO
         ],
         hideProject: false,
-        LogoSize: 55,
+        LogoSize: 50,
         versions: []
     },
     {
-        Name: "YoaTube",
-        ShortDesc: "YoaTube is a YouTube-inspired video streaming app. Enjoy a vast collection of videos, personalized recommendations, and a seamless user interface.",
-        Desc: "YoaTube is a dynamic video streaming application, designed with the power of the YouTube API. This innovative platform provides users with an immersive and engaging video-watching experience similar to YouTube. Explore an extensive library of videos. With YoaTube, you can dive into a world of captivating videos, all within a seamless and user-friendly interface.",
-        Logo: YoatubeLogo,
-        Shot: YoatubeShots,
-        Mockup: YoatubeMockup,
-        Theme: "#0f0f0f",
+        Name: "AI Exam-Seating Framework",
+        ShortDesc: "The future of academic integrity. Algorithmic seating optimization for secure and efficient examination halls.",
+        Desc: "The AI Exam-Seating Framework is a sophisticated logistics engine built to solve complex institutional seating challenges. Using advanced graph algorithms and ML-based conflict resolution, it maximizes space utilization while mathematically eliminating proximity-based cheating. The system automates the entire examination workflow, from dynamic hall ticket generation to real-time biometric attendance tracking and automated seating displays.",
+        Logo: ExamSeatingLogo,
+        Shot: ExamSeatingShots,
+        Mockup: ExamSeatingMockup,
+        Theme: "#fbbf24",
         Status: "completed",
-        Link: "https://yoatube.netlify.app/",
-        Source: "https://github.com/rehanvd/yoatube",
-        Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.React, TechInfo.RESTAPI],
+        Link: "#",
+        Source: "#",
+        Tech: [TechInfo.Next, TechInfo.TypeScript, TechInfo.MySQL, TechInfo.Redux, TechInfo.Node],
         features: [
             {
-                title: "Video Streaming",
-                description: "Stream high-quality videos seamlessly. Enjoy smooth playback with adaptive streaming technology."
+                title: "Algorithmic Placement",
+                description: "Optimized seating patterns using AI to maximize distance between students of the same subject."
             },
             {
-                title: "Search and Discovery",
-                description: "Discover new content with powerful search and recommendation algorithms. Find videos based on your interests and preferences."
+                title: "Dynamic Hall Tickets",
+                description: "Automated PDF generation with randomized seating codes and QR-based verification."
+            },
+            {
+                title: "Space Utilization AI",
+                description: "Predictive modeling to fit maximum students in available infrastructure without compromising safety."
             },
             FeatureList.Responsive,
-            FeatureList.SEO,
+            FeatureList.SEO
         ],
         hideProject: false,
-        LogoSize: 55,
+        LogoSize: 50,
         versions: []
-    },
-    {
-        Name: "Srinivas Exam Manager",
-        ShortDesc: "A software where Students can easily register, while staff and faculty efficiently manage academic details. Staff can generate hall tickets and marks cards.",
-        Desc: "Srinivas Exam Manager is a comprehensive exam management software exclusively developed for Srinivas University. Students can easily register and access their academic details, while staff and faculty members can efficiently manage student records. With its advanced features, the software can generate examination hall tickets and marks cards, simplifying the administrative process.",
-        Logo: SrinivasLogo,
-        Shot: SrinivasShots,
-        Mockup: SrinivasMockup,
-        Theme: "#fff",
-        Status: "completed",
-        Link: "https://srinivas-exam-manager.netlify.app/",
-        Source: "https://github.com/rehanvd/srinivas-exam-manager",
-        Demo: { email: "demouser123@gmail.com", password: "DemoUser123" },
-        Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.React, TechInfo.Node, TechInfo.MySQL],
-        features: [
-            {
-                title: "Dynamic Hall Ticket Generation",
-                description: "Generate personalized hall tickets dynamically for each student. Include relevant exam details and student information."
-            },
-            {
-                title: "File Upload & Download",
-                description: "Upload and download files securely. Share resources such as study materials, question papers, and answer keys with students and faculty."
-            },
-            {
-                title: "Multi-Role Based User Management",
-                description: "Manage users with different roles such as Student, Faculty, Staff, Admin, Super-Admin. Assign permissions and access levels based on user roles."
-            },
-            {
-                title: "Exam Scheduling",
-                description: "Schedule exams efficiently with an intuitive scheduling system. Set exam dates, times and notify users about upcoming exams."
-            },
-            {
-                title: "Attendance Management",
-                description: "Monitor student attendance during exams. Keep track of attendance records and generate reports for analysis and compliance purposes."
-            },
-            {
-                title: "Notification System",
-                description: "Send automated notifications to students and faculty about exam-related events. Notify about exam schedules, hall ticket availability, and result announcements."
-            },
-            FeatureList.Responsive,
-            FeatureList.SEO,
-        ],
-        hideProject: false,
-        LogoSize: 55,
-        versions: []
-    },
-    {
-        Name: "Piktures",
-        ShortDesc: "Explore a wide range of vibrant and colorful images. Users can effortlessly search, download, and instantly access stunning visuals in high quality.",
-        Desc: "Piktures is an image browsing app that offers a vast collection of vibrant and colorful images. With Piktures, users can effortlessly search for any image and download them in high quality. Discover stunning visuals, express your creativity, and enhance your projects with Piktures. Explore and download captivating images with ease.",
-        Logo: PikturesLogo,
-        Shot: PikturesShots,
-        Mockup: ARMSv3Mockup,
-        Theme: "#ddd",
-        Status: "completed",
-        Link: "https://pikture.netlify.app/",
-        Source: "https://github.com/rehanvd/pikture",
-        Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.React, TechInfo.RESTAPI],
-        features: [
-            FeatureList.Responsive,
-            FeatureList.SEO,
-        ],
-        hideProject: true,
-        LogoSize: 55,
-        versions: []
-    },
-    {
-        Name: "Days Beyond",
-        ShortDesc: "Track the progress of the current year in days, hours, minutes, and seconds. Discover special occasions, search specific dates, and calculate your age.",
-        Desc: "Days Beyond is a feature-rich calendar event app that goes beyond traditional functionality. It not only helps you stay organized with events but also showcases the progress of the current year in percentage. Additionally, it displays the exact duration—days, hours, minutes, and seconds since January 1st of the current year, adding a unique perspective to time. Discover the significance of today, uncover special occasions, and easily search for specific dates. Furthermore, Days Beyond accurately calculates your age, ensuring precision and convenience.",
-        Logo: DaysbeyondLogo,
-        Shot: DaysbeyondShots,
-        Mockup: DaysbeyondMockup,
-        Theme: "#008ee0",
-        Status: "completed",
-        Link: "https://daysbeyond.netlify.app/",
-        Source: "https://github.com/rehanvd/DaysBeyond",
-        Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.RESTAPI],
-        features: [
-            {
-                title: "Accurate Time Progress",
-                description: "Calculate exact time elapsed since Jan 1. Display months, days, hours, minutes, and seconds passed since the beginning of the year."
-            },
-            {
-                title: "Accurate User Age Calculation",
-                description: "Calculate user ages accurately based on their date of birth. Display age in years, months, and days with precision."
-            },
-            {
-                title: "Significance of Today",
-                description: "Display the significance of today's date. Highlight special events, holidays, birthdays, or historical events that occurred on this day."
-            },
-            {
-                title: "Color of the Day",
-                description: "Show the color associated with the current day. Use color psychology to represent the mood or energy of the day."
-            },
-            FeatureList.Responsive,
-            FeatureList.SEO,
-        ],
-        hideProject: false,
-        LogoSize: 55,
-        versions: []
-    },
-    {
-        Name: "ARMS v1",
-        ShortDesc: "Trouble finding your Study Materials? ARMS helps you to find PDFs for all subjects in one place. Students can easily login and download PDF files.",
-        Desc: "Trouble finding your Study Materials? ARMS helps you to find PDFs for all subjects in one place. Students can easily login and download PDF files.",
-        Logo: ArmsPhpLogo,
-        Shot: Armsv1Shots,
-        Mockup: ARMSv1Mockup,
-        Theme: "#fff",
-        Status: "completed",
-        Link: "http://arms-v1.infinityfreeapp.com/",
-        Source: "https://github.com/rehanvd/ARMS-PHP",
-        Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.PHP, TechInfo.RESTAPI],
-        features: [
-            FeatureList.Responsive,
-            FeatureList.SEO,
-        ],
-        hideProject: true,
-        LogoSize: 55,
-        versions: [
-            { title: "ARMS v3", version: "3" },
-            { title: "ARMS v2", version: "2" },
-            { title: "ARMS v1", version: "1" },
-        ]
-    },
-    {
-        Name: "Film Stack",
-        ShortDesc: "Discover trending movies and access details of all films and search for any movie you desire. Easily search for any film and immerse in the world of cinema.",
-        Desc: "FilmStack is the ultimate movie app that brings you all the details of trending films at your fingertips. Explore a vast collection of movies, access comprehensive information, and immerse yourself in the world of cinema. With FilmStack, you can effortlessly search for any movie, making it easy to find your favorite movies.",
-        Logo: FilmstackLogo,
-        Shot: FilmstackShots,
-        Mockup: ARMSv3Mockup,
-        Theme: "#fff",
-        Status: "completed",
-        Link: "https://filmstack.netlify.app/",
-        Source: "https://github.com/rehanvd/FilmStack",
-        Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.RESTAPI],
-        features: [
-            FeatureList.Responsive,
-            FeatureList.SEO,
-        ],
-        hideProject: true,
-        LogoSize: 55,
-        versions: []
-    },
-    {
-        Name: "CovidTrax",
-        ShortDesc: "",
-        Desc: "Search global COVID-19 statistics for each Country and Indian States and Districts",
-        Logo: CovidtraxLogo,
-        Shot: CovidTraxShots,
-        Mockup: ARMSv3Mockup,
-        Theme: "#fff",
-        Status: "completed",
-        Link: "https://covidtrax.netlify.app/",
-        Source: "https://github.com/rehanvd/CovidTrax",
-        Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.RESTAPI],
-        features: [
-            FeatureList.Responsive,
-            FeatureList.SEO,
-        ],
-        hideProject: true,
-        LogoSize: 55,
-        versions: []
-    },
-    {
-        Name: "CliMate",
-        ShortDesc: "Get instant weather updates. Accurate and easy to use, access weather updates for any location, including your current area using Geolocation support.",
-        Desc: "CliMate is a user friendly weather app that keeps you informed about the current conditions of any location. With CliMate, you can effortlessly access accurate weather updates for any place you choose. Utilizing geolocation support, it can even detect your current location, ensuring you always have the most precise weather information at your fingertips. Stay informed and be prepared with CliMate.",
-        Logo: ClimateLogo,
-        Shot: ClimateShots,
-        Mockup: ClimateMockup,
-        Theme: "#fff",
-        Status: "completed",
-        Link: "https://klimate.netlify.app/",
-        Source: "https://github.com/rehanvd/CliMate",
-        Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.RESTAPI],
-        features: [
-            FeatureList.Responsive,
-            FeatureList.SEO,
-        ],
-        hideProject: true,
-        LogoSize: 55,
-        versions: [
-            { title: "Vortexa", version: "2" },
-            { title: "CliMate", version: "1" },
-        ]
     }
-]
+];
