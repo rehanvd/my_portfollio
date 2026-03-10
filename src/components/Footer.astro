@@ -1,8 +1,6 @@
 ---
 import { Image } from "astro:assets";
 import {
-    DiscordIcon,
-    FaceBookIcon,
     GithubIcon,
     InstagramIcon,
     LinkedinIcon,
@@ -43,13 +41,7 @@ const currentYear = new Date().getFullYear();
     </div>
 
     <div class="grid grid-cols-3 lg:grid-cols-6 gap-x-20 gap-y-10 lg:gap-20">
-        <a
-            href="https://www.facebook.com/ChiragChrg/"
-            target="_blank"
-            rel="noreferrer"
-        >
-            <Image src={FaceBookIcon} alt="FaceBook" width={30} height={30} />
-        </a>
+
         <a href="https://x.com/RehanVD" target="_blank" rel="noreferrer">
             <Image src={TwitterIcon} alt="Twitter X" width={30} height={30} />
         </a>
@@ -65,22 +57,16 @@ const currentYear = new Date().getFullYear();
             target="_blank"
             rel="noreferrer"
         >
-            <Image src={LinkedinIcon} alt="Discord" width={30} height={30} />
+            <Image src={LinkedinIcon} alt="LinkedIn" width={30} height={30} />
         </a>
         <a
             href="https://github.com/rehanvd"
             target="_blank"
             rel="noreferrer"
         >
-            <Image src={GithubIcon} alt="Discord" width={30} height={30} />
+            <Image src={GithubIcon} alt="GitHub" width={30} height={30} />
         </a>
-        <a
-            href="https://discord.gg/WmVQjMryDz"
-            target="_blank"
-            rel="noreferrer"
-        >
-            <Image src={DiscordIcon} alt="Discord" width={30} height={30} />
-        </a>
+
     </div>
 
     <span>© Copyright 2023-{currentYear} Rehan</span>
