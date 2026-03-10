@@ -2,11 +2,11 @@
   "name": "portfolio",
   "type": "module",
   "version": "1.0.3",
-  "homepage": "https://github.com/ChiragChrg/portfolio",
+  "homepage": "https://github.com/rehanvd",
   "author": {
-    "name": "ChiragChrg",
-    "email": "chiruchirag2001@gmail.com",
-    "url": "https://chiragchrg.netlify.app/"
+    "name": "Rehan",
+    "email": "rehan@example.com",
+    "url": "https://github.com/rehanvd"
   },
   "scripts": {
     "dev": "astro dev --host",
