@@ -217,7 +217,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#FFF",
         Status: "completed",
         Link: "https://arms-v3.vercel.app/",
-        Source: "https://github.com/ChiragChrg/arms-v3",
+        Source: "https://github.com/rehanvd/arms-v3",
         Tech: [TechInfo.Next, TechInfo.TypeScript, TechInfo.TailwindCSS, TechInfo.ReactQuery, TechInfo.Zustand, TechInfo.MongoDB, TechInfo.NextAuth, TechInfo.EdgeStore],
         features: [
             {
@@ -261,7 +261,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#fff",
         Status: "completed",
         Link: "https://vortexa.netlify.app/",
-        Source: "https://github.com/ChiragChrg/vortexa",
+        Source: "https://github.com/rehanvd/vortexa",
         Tech: [TechInfo.Astro, TechInfo.React, TechInfo.TypeScript, TechInfo.TailwindCSS, TechInfo.D3, TechInfo.NanoStores, TechInfo.RESTAPI],
         features: [
             FeatureList.Responsive,
@@ -305,14 +305,14 @@ export const ProjectsList: ProjectsListType = [
     {
         Name: "Next Mart",
         ShortDesc: "Discover an unparalleled shopping experience with Next Mart website. Unleash the power of online shopping with a diverse range of products.",
-        Desc: "Discover an unparalleled shopping experience with Next Mart, an exceptional web app developed by ChiragChrg. Unleash the power of online shopping with a vast array of products at your fingertips",
+        Desc: "Discover an unparalleled shopping experience with Next Mart, an exceptional web app developed by Rehan. Unleash the power of online shopping with a vast array of products at your fingertips",
         Logo: NextmartLogo,
         Shot: NextmartShots,
         Mockup: ARMSv3Mockup,
         Theme: "#090b0b",
         Status: "development",
         Link: "https://nextmart.vercel.app/",
-        Source: "https://github.com/ChiragChrg/nextmart",
+        Source: "https://github.com/rehanvd/nextmart",
         Tech: [TechInfo.Next, TechInfo.TypeScript, TechInfo.MongoDB, TechInfo.NextAuth, TechInfo.Redux, TechInfo.TailwindCSS],
         features: [
             FeatureList.Responsive,
@@ -332,7 +332,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#fff",
         Status: "completed",
         Link: "https://armss.netlify.app/",
-        Source: "https://github.com/ChiragChrg/ARMS",
+        Source: "https://github.com/rehanvd/ARMS",
         Tech: [TechInfo.Vite, TechInfo.React, TechInfo.Node, TechInfo.MongoDB, TechInfo.GDrive],
         features: [
             {
@@ -368,7 +368,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#001220",
         Status: "development",
         Link: "https://xrecon.netlify.app/",
-        Source: "https://github.com/ChiragChrg/xrecon",
+        Source: "https://github.com/rehanvd/xrecon",
         Demo: { email: "demouser123@gmail.com", password: "DemoUser123" },
         Tech: [TechInfo.Vite, TechInfo.React, TechInfo.Node, TechInfo.MongoDB, TechInfo.SocketIO],
         features: [
@@ -405,7 +405,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#0f0f0f",
         Status: "completed",
         Link: "https://yoatube.netlify.app/",
-        Source: "https://github.com/ChiragChrg/yoatube",
+        Source: "https://github.com/rehanvd/yoatube",
         Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.React, TechInfo.RESTAPI],
         features: [
             {
@@ -433,7 +433,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#fff",
         Status: "completed",
         Link: "https://srinivas-exam-manager.netlify.app/",
-        Source: "https://github.com/ChiragChrg/srinivas-exam-manager",
+        Source: "https://github.com/rehanvd/srinivas-exam-manager",
         Demo: { email: "demouser123@gmail.com", password: "DemoUser123" },
         Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.React, TechInfo.Node, TechInfo.MySQL],
         features: [
@@ -478,7 +478,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#ddd",
         Status: "completed",
         Link: "https://pikture.netlify.app/",
-        Source: "https://github.com/ChiragChrg/pikture",
+        Source: "https://github.com/rehanvd/pikture",
         Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.React, TechInfo.RESTAPI],
         features: [
             FeatureList.Responsive,
@@ -498,7 +498,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#008ee0",
         Status: "completed",
         Link: "https://daysbeyond.netlify.app/",
-        Source: "https://github.com/ChiragChrg/DaysBeyond",
+        Source: "https://github.com/rehanvd/DaysBeyond",
         Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.RESTAPI],
         features: [
             {
@@ -534,7 +534,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#fff",
         Status: "completed",
         Link: "http://arms-v1.infinityfreeapp.com/",
-        Source: "https://github.com/ChiragChrg/ARMS-PHP",
+        Source: "https://github.com/rehanvd/ARMS-PHP",
         Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.PHP, TechInfo.RESTAPI],
         features: [
             FeatureList.Responsive,
@@ -558,7 +558,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#fff",
         Status: "completed",
         Link: "https://filmstack.netlify.app/",
-        Source: "https://github.com/ChiragChrg/FilmStack",
+        Source: "https://github.com/rehanvd/FilmStack",
         Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.RESTAPI],
         features: [
             FeatureList.Responsive,
@@ -578,7 +578,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#fff",
         Status: "completed",
         Link: "https://covidtrax.netlify.app/",
-        Source: "https://github.com/ChiragChrg/CovidTrax",
+        Source: "https://github.com/rehanvd/CovidTrax",
         Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.RESTAPI],
         features: [
             FeatureList.Responsive,
@@ -598,7 +598,7 @@ export const ProjectsList: ProjectsListType = [
         Theme: "#fff",
         Status: "completed",
         Link: "https://klimate.netlify.app/",
-        Source: "https://github.com/ChiragChrg/CliMate",
+        Source: "https://github.com/rehanvd/CliMate",
         Tech: [TechInfo.HTML, TechInfo.CSS, TechInfo.JavaScript, TechInfo.RESTAPI],
         features: [
             FeatureList.Responsive,
