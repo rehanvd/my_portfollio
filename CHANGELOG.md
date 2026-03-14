@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file.
 
+## 1.0.0 (2026-03-14)
+
+* fix: dynamically map static paths for projects ([a9e60a0](https://github.com/rehanvd/my_portfollio/commit/a9e60a0))
+* 2 ([b39201c](https://github.com/rehanvd/my_portfollio/commit/b39201c))
+* 3 ([a4d1364](https://github.com/rehanvd/my_portfollio/commit/a4d1364))
+* 4 ([12296f0](https://github.com/rehanvd/my_portfollio/commit/12296f0))
+* 5 ([ececed7](https://github.com/rehanvd/my_portfollio/commit/ececed7))
+* 7 ([ac8cf2d](https://github.com/rehanvd/my_portfollio/commit/ac8cf2d))
+* 8 ([5a12a9a](https://github.com/rehanvd/my_portfollio/commit/5a12a9a))
+* first commit ([1225ed2](https://github.com/rehanvd/my_portfollio/commit/1225ed2))
+* inittt ([2e6c3e4](https://github.com/rehanvd/my_portfollio/commit/2e6c3e4))
+* update footer logo and revert rontact to contact ([b51f872](https://github.com/rehanvd/my_portfollio/commit/b51f872))
+
 ## <small>1.0.3 (2025-11-16)</small>
 
 * docs: 📚  Update README to include details about nightly build and new features ([79fc2ae](https://github.com/ChiragChrg/Portfolio/commit/79fc2ae))
